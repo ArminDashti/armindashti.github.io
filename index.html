@@ -4,14 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your GitHub Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            width: 250px;
+        }
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .bio {
+            margin-top: 15px;
+            font-size: 1em;
+        }
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .social-links img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
 </head>
 <body>
+    <div class="sidebar">
+        <!-- Profile Picture -->
+        <img src="your_picture.jpg" alt="Your Profile Picture" class="profile-picture">
+
+        <!-- Bio -->
+        <div class="bio">
+            <p>Hello, I'm Armin.</p>
+            <p>I'm an AI researcher focusing on Reinforcement Learning. Currently, I'm using Python, PyTorch, and exploring AI models to solve interesting problems. I love learning new technologies and applying them to create impactful solutions.</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://x.com/yourusername" target="_blank">
+                <img src="twitter_logo.png" alt="Twitter Logo">
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <img src="linkedin_logo.png" alt="LinkedIn Logo">
+            </a>
+            <a href="mailto:your.email@example.com">
+                <img src="gmail_logo.png" alt="Gmail Logo">
+            </a>
+        </div>
+    </div>
+
     <h1>Hello, GitHub Pages!</h1>
-    
     <h2>About Me</h2>
     <p>Hello. I'm Armin.</p>
     <p>I'm an AI researcher focusing on Reinforcement Learning. Currently, I'm using Python, PyTorch, and exploring AI models to solve interesting problems. I love learning new technologies and applying them to create impactful solutions.</p>
-    
+
     <h3>Skills</h3>
     <ul>
         <li>Python</li>
@@ -19,7 +74,7 @@
         <li>Reinforcement Learning</li>
         <li>AI Research</li>
     </ul>
-    
+
     <h3>Projects</h3>
     <p>Here are some projects I'm working on or have completed:</p>
     <ul>
@@ -29,6 +84,5 @@
 
     <h3>Contact</h3>
     <p>You can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-
 </body>
 </html>
