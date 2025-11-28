@@ -1,140 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            width: 100%;
-            max-width: 600px;
-            padding: 20px;
-        }
-        .navbar {
-            width: 100%;
-            background-color: #333;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-        }
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            width: 100%;
-        }
-        .profile-picture {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-        .bio {
-            margin-top: 15px;
-            font-size: 1em;
-            text-align: center;
-        }
-        .social-links {
-            margin-top: 15px;
-            display: flex;
-            justify-content: center;
-        }
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-links img {
-            width: 24px;
-            height: 24px;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-            .bio {
-                font-size: 0.9em;
-            }
-            .navbar {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <title>Armin Dashti - AI & .NET Developer</title>
+    <meta name="description"
+        content="AI Engineer and .NET Developer specializing in Computer Vision and Machine Learning">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#resume">Resume</a>
-        <a href="#projects">My Projects</a>
-        <a href="#blog">Blog</a>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cv">My CV</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <div class="container">
-        <div class="sidebar">
-            <!-- Profile Picture -->
-            <img src="images/armin.jpg" alt="Your Profile Picture" class="profile-picture">
-
-            <!-- Bio -->
-            <div class="bio">
-                <p>Machine Learning Engineer</p>
-                <p>I'm Armin, and I have a deep interest in computers and technology. Currently, my main focus is on reinforcement learning (RL), where I am exploring the challenges and advancements in AI-driven decision-making systems.</p>
-            </div>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <img src="images/armin.png" alt="Armin Dashti" class="profile-picture">
+            <h1>Armin Dashti</h1>
+            <p class="title">AI Engineer & .NET Developer</p>
 
             <!-- Social Links -->
             <div class="social-links">
-                <!-- X (Twitter) -->
-                <a href="https://x.com/armin_dashti" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/300px-X_logo_2023.svg.png" alt="X Logo">
+                <a href="https://github.com/armindashti" target="_blank" title="GitHub">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+                        alt="GitHub">
                 </a>
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/armin-dashti-058239a1/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn Logo">
+                <a href="https://www.linkedin.com/in/armin-dashti-058239a1/" target="_blank" title="LinkedIn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn">
                 </a>
-                <!-- Gmail -->
-                <a href="mailto:arminonline71">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png?20221017173631" alt="Gmail Logo">
+                <a href="https://x.com/armin_dashti" target="_blank" title="X (Twitter)">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/300px-X_logo_2023.svg.png"
+                        alt="X">
                 </a>
-                <!-- Last.fm -->
-                <a href="https://www.last.fm/user/Armin71" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Lastfm_logo.svg" alt="Last.fm Logo">
+                <a href="mailto:arminonline71@gmail.com" title="Email">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png"
+                        alt="Gmail">
                 </a>
-                <!-- GitHub -->
-                <a href="https://github.com/armindashti" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo">
+                <a href="https://stackoverflow.com/users/4306558/armin" target="_blank" title="Stack Overflow">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg"
+                        alt="Stack Overflow">
                 </a>
-                <!-- Spotify -->
-                <a href="https://open.spotify.com/user/armin.71" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo">
+                <a href="https://www.last.fm/user/Armin71" target="_blank" title="Last.fm">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Lastfm_logo.svg" alt="Last.fm">
                 </a>
-                <!-- Stack Overflow -->
-                <a href="https://stackoverflow.com/users/4306558/armin" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg" alt="Stack Overflow Logo">
+                <a href="https://open.spotify.com/user/armin.71" target="_blank" title="Spotify">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
+                        alt="Spotify">
                 </a>
-                <!-- IMDb -->
-                <a href="https://www.imdb.com/user/ur56965123/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDb Logo">
+                <a href="https://www.imdb.com/user/ur56965123/" target="_blank" title="IMDb">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDb">
                 </a>
             </div>
         </div>
+    </section>
 
-    </div>
+    <!-- CV Section -->
+    <section id="cv">
+        <div class="container">
+            <h2>My CV</h2>
+
+            <div class="cv-category">
+                <h3>Experience</h3>
+
+                <div class="cv-item">
+                    <h4>.NET Developer</h4>
+                    <p class="cv-company">Daroupakhsh Distribution co · توزیع داروپخش</p>
+                    <span class="cv-date">Aug 2025 - Present · 4 mos</span>
+                    <p class="cv-location">Tehran, Tehran Province, Iran · On-site</p>
+                    <p class="cv-skills"><strong>Skills:</strong> ASP.NET Core</p>
+                </div>
+
+                <div class="cv-item">
+                    <h4>Artificial Intelligence Engineer</h4>
+                    <p class="cv-company">HiWEB</p>
+                    <span class="cv-date">Jul 2023 - Sep 2024 · 1 yr 3 mos</span>
+                    <p class="cv-location">Tehran, Tehran Province, Iran · Hybrid</p>
+                    <p class="cv-skills"><strong>Skills:</strong> Computer Vision</p>
+                </div>
+
+                <div class="cv-item">
+                    <h4>Artificial Intelligence Engineer</h4>
+                    <p class="cv-company">Farafan</p>
+                    <span class="cv-date">Jul 2022 - Mar 2023 · 9 mos</span>
+                    <p class="cv-location">Tehran, Tehran Province, Iran · Hybrid</p>
+                    <p class="cv-skills"><strong>Skills:</strong> Computer Vision</p>
+                </div>
+
+                <div class="cv-item">
+                    <h4>.NET Developer</h4>
+                    <p class="cv-company">The National Iranian Oil Company (NIOC) - Iranian Fuel Conservation Company
+                    </p>
+                    <span class="cv-date">Mar 2017 - Mar 2018 · 1 yr 1 mo</span>
+                    <p class="cv-location">Bandar-e Mahshahr, Khuzestan Province, Iran · On-site</p>
+                </div>
+            </div>
+
+            <div class="cv-category">
+                <h3>Education</h3>
+                <div class="cv-item">
+                    <h4>Computer Science</h4>
+                    <p>Focused on software development and artificial intelligence technologies.</p>
+                </div>
+            </div>
+
+            <div class="cv-category">
+                <h3>Skills</h3>
+                <div class="skills">
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">ASP.NET Core</span>
+                    <span class="skill-tag">.NET Development</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">Reinforcement Learning</span>
+                    <span class="skill-tag">AI Research</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="bio-text">
+                <p>
+                    I'm Armin, and I have a deep interest in computers and technology.
+                    With experience spanning both AI engineering and .NET development, I bring a unique blend
+                    of machine learning expertise and software engineering skills.
+                </p>
+                <p>
+                    My work in artificial intelligence focuses on computer vision applications, while my .NET
+                    development experience includes building robust enterprise applications. I'm particularly
+                    passionate about reinforcement learning and exploring how AI can solve complex real-world problems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>Email:</span>
+                    <a href="mailto:arminonline71@gmail.com">arminonline71@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>LinkedIn:</span>
+                    <a href="https://www.linkedin.com/in/armin-dashti-058239a1/"
+                        target="_blank">linkedin.com/in/armin-dashti</a>
+                </div>
+                <div class="contact-item">
+                    <span>GitHub:</span>
+                    <a href="https://github.com/armindashti" target="_blank">github.com/armindashti</a>
+                </div>
+                <div class="contact-item">
+                    <span>Twitter/X:</span>
+                    <a href="https://x.com/armin_dashti" target="_blank">@armin_dashti</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
