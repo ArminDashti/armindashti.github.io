@@ -13,7 +13,7 @@
     --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
     --radius: 10px;
     --page-max: 760px;
-    --font: "Instrument Sans", "Segoe UI", sans-serif;
+    --font: "Inter", sans-serif;
 }
 
 *,
@@ -191,9 +191,9 @@ a.contact-row__item:hover {
     width: 48px;
     height: 48px;
     object-fit: contain;
-    border-radius: 8px;
-    background: var(--bg-elevated);
-    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: transparent;
+    flex-shrink: 0;
 }
 
 .job__role {
@@ -301,11 +301,27 @@ a.contact-row__item:hover {
     line-height: 1.25;
 }
 
-.skill-chip i {
+.skill-chip i,
+.skill-chip img {
     width: 0.9rem;
-    text-align: center;
+    height: 0.9rem;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-size: 0.78rem;
     color: var(--text-muted);
+}
+
+.skill-chip img {
+    object-fit: contain;
+}
+
+.contact-row__item img {
+    width: 0.9rem;
+    height: 0.9rem;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 /* Technologies */
@@ -323,18 +339,37 @@ a.contact-row__item:hover {
     margin-bottom: 0.45rem;
 }
 
-.tech-group .skill-chips {
+.tech-group .skill-chips,
+.project .skill-chips {
     margin-left: 0;
     padding-left: 0;
+    margin-top: 0.5rem;
 }
 
 /* Education */
 
 .education {
     display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+}
+
+.education__logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: transparent;
+    flex-shrink: 0;
+}
+
+.education__body {
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 1rem;
+    flex: 1;
+    min-width: 0;
 }
 
 .education__degree {
@@ -387,12 +422,37 @@ a.contact-row__item:hover {
     color: inherit;
 }
 
+.project--static:hover {
+    transform: none;
+    box-shadow: none;
+}
+
 .project__top {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     gap: 0.75rem;
     margin-bottom: 0.3rem;
+}
+
+.project__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.5rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--accent);
+    word-break: break-all;
+}
+
+.project__links a {
+    text-decoration: none;
+}
+
+.project__links a:hover {
+    text-decoration: underline;
 }
 
 .project__name {
@@ -468,7 +528,7 @@ a.contact-row__item:hover {
         margin-left: 0;
     }
 
-    .education {
+    .education__body {
         flex-direction: column;
         gap: 0.35rem;
     }
