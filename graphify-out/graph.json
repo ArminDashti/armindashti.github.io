@@ -1,0 +1,123 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "contact.js",
+      "file_type": "code",
+      "source_file": "contact.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "contact",
+      "community": 0,
+      "community_name": "contact.js",
+      "norm_label": "contact.js"
+    },
+    {
+      "label": "join()",
+      "file_type": "code",
+      "source_file": "contact.js",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "contact_join",
+      "community": 0,
+      "community_name": "contact.js",
+      "norm_label": "join()"
+    },
+    {
+      "label": "reveal()",
+      "file_type": "code",
+      "source_file": "contact.js",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "contact_reveal",
+      "community": 0,
+      "community_name": "contact.js",
+      "norm_label": "reveal()"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 1,
+      "community_name": "armindashti.github.io",
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "armindashti.github.io",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_armindashti_github_io",
+      "community": 1,
+      "community_name": "armindashti.github.io",
+      "norm_label": "armindashti.github.io"
+    },
+    {
+      "label": "SEO",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "readme_seo",
+      "community": 1,
+      "community_name": "armindashti.github.io",
+      "norm_label": "seo"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "contact.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "contact",
+      "target": "contact_join",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "contact.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "contact",
+      "target": "contact_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "readme_armindashti_github_io",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_armindashti_github_io",
+      "target": "readme_seo",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "3e9a8d6f2f123181d5898f721735ce704069e912"
+}

@@ -1,0 +1,237 @@
+{
+  ".cursor/hooks/state/continual-learning.json": {
+    "mtime": 1786127078.0145571,
+    "ast_hash": "985ff3dccf1259d24e41e3428f8314b8",
+    "semantic_hash": ""
+  },
+  "contact.js": {
+    "mtime": 1786127189.6002257,
+    "ast_hash": "5d3536d7e489e44ff71852fb779ffee6",
+    "semantic_hash": ""
+  },
+  "metadata.json": {
+    "mtime": 1786119574.522884,
+    "ast_hash": "aa09bdb07f5a175046fec1043f3abc7f",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1786119574.4888525,
+    "ast_hash": "1d5803ccc373e5b6cb747dbd082e64e5",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1786127197.4290931,
+    "ast_hash": "47e2b7ebd324dfdaf4e2efcbcf2cae3f",
+    "semantic_hash": ""
+  },
+  "robots.txt": {
+    "mtime": 1786119574.522884,
+    "ast_hash": "0970a5e288dcc7f3decaffbfc2c67de4",
+    "semantic_hash": ""
+  },
+  "icons/antigravity.png": {
+    "mtime": 1786119574.4903545,
+    "ast_hash": "e4a079be0aff31e46ac210e471911eaa",
+    "semantic_hash": ""
+  },
+  "icons/claude.svg": {
+    "mtime": 1786119574.4903545,
+    "ast_hash": "1813bd6fab7419e563054df8159d4ec5",
+    "semantic_hash": ""
+  },
+  "icons/copilot.svg": {
+    "mtime": 1786119574.491358,
+    "ast_hash": "3b32de03ab1da74c6e7d62175999fbee",
+    "semantic_hash": ""
+  },
+  "icons/csharp.svg": {
+    "mtime": 1786119574.491358,
+    "ast_hash": "9255e00ab31463c2acc78fb7e03d31b2",
+    "semantic_hash": ""
+  },
+  "icons/cursor.svg": {
+    "mtime": 1786119574.4923623,
+    "ast_hash": "d4114a44c182a250c970a8b3490acbd1",
+    "semantic_hash": ""
+  },
+  "icons/devin.svg": {
+    "mtime": 1786119574.4933608,
+    "ast_hash": "60d4dd3ce1bfa1c4af03ab0fe9c4fca0",
+    "semantic_hash": ""
+  },
+  "icons/docker.svg": {
+    "mtime": 1786119574.4933608,
+    "ast_hash": "653060abc63da74fdfce2d7254a64cf8",
+    "semantic_hash": ""
+  },
+  "icons/dotnet.svg": {
+    "mtime": 1786119574.4943604,
+    "ast_hash": "d6495f49a75d5c99ff4895ac2e448e10",
+    "semantic_hash": ""
+  },
+  "icons/git.svg": {
+    "mtime": 1786119574.4943604,
+    "ast_hash": "f4f5f8c4e1fb9341ce597548ede08a8f",
+    "semantic_hash": ""
+  },
+  "icons/go.svg": {
+    "mtime": 1786119574.4943604,
+    "ast_hash": "488f646f0dd9a264e0d71172ee2fbd6d",
+    "semantic_hash": ""
+  },
+  "icons/iis.svg": {
+    "mtime": 1786119574.4953604,
+    "ast_hash": "2114f81adab8534686406b393ba724d6",
+    "semantic_hash": ""
+  },
+  "icons/kotlin.svg": {
+    "mtime": 1786119574.4953604,
+    "ast_hash": "69d32aa373cb18296587da027ca83c4d",
+    "semantic_hash": ""
+  },
+  "icons/langchain.svg": {
+    "mtime": 1786119574.4963603,
+    "ast_hash": "4cb546d048a8c3b5da17d65df790d88f",
+    "semantic_hash": ""
+  },
+  "icons/microsoft.svg": {
+    "mtime": 1786119574.4963603,
+    "ast_hash": "0ca3b1c2c9fc07d5efb5652d2d38bdd6",
+    "semantic_hash": ""
+  },
+  "icons/microsoftsqlserver.svg": {
+    "mtime": 1786119574.4973602,
+    "ast_hash": "ae2291fd46f7ee8e12441edc23129d40",
+    "semantic_hash": ""
+  },
+  "icons/numpy.svg": {
+    "mtime": 1786119574.4973602,
+    "ast_hash": "fa9deced752dbe8f9b46bfd2ff2b3ec6",
+    "semantic_hash": ""
+  },
+  "icons/openai.svg": {
+    "mtime": 1786119574.4983604,
+    "ast_hash": "66b64f4f72674bab46048440fa027329",
+    "semantic_hash": ""
+  },
+  "icons/opencv.svg": {
+    "mtime": 1786119574.4983604,
+    "ast_hash": "129719ad9c1953be09318d7b7e23501f",
+    "semantic_hash": ""
+  },
+  "icons/pandas.svg": {
+    "mtime": 1786119574.4998624,
+    "ast_hash": "990a96c5c5e86d569d0f79c0dcc3469d",
+    "semantic_hash": ""
+  },
+  "icons/powershell.svg": {
+    "mtime": 1786119574.4998624,
+    "ast_hash": "476016994bd8ff430d934ec8e33b66c3",
+    "semantic_hash": ""
+  },
+  "icons/python.svg": {
+    "mtime": 1786119574.500865,
+    "ast_hash": "95df9761f0f0076e6b350183fc291723",
+    "semantic_hash": ""
+  },
+  "icons/pytorch.svg": {
+    "mtime": 1786119574.500865,
+    "ast_hash": "f15c05245b3c78b0f15a4217dd296534",
+    "semantic_hash": ""
+  },
+  "icons/redis.svg": {
+    "mtime": 1786119574.5018659,
+    "ast_hash": "da5f72a59505b646c84312ffd7268fb5",
+    "semantic_hash": ""
+  },
+  "icons/rust.svg": {
+    "mtime": 1786119574.5018659,
+    "ast_hash": "057929755c7aa4ae0c4b49885828a8f2",
+    "semantic_hash": ""
+  },
+  "icons/scikitlearn.svg": {
+    "mtime": 1786119574.5028653,
+    "ast_hash": "a5e9718252c81633d600c7a3d5106e5d",
+    "semantic_hash": ""
+  },
+  "icons/tailwindcss.svg": {
+    "mtime": 1786119574.5028653,
+    "ast_hash": "157743b917b048293cb4962d662c5b6e",
+    "semantic_hash": ""
+  },
+  "icons/tensorflow.svg": {
+    "mtime": 1786119574.5038652,
+    "ast_hash": "94e52e401a33450ebeab8b4947428104",
+    "semantic_hash": ""
+  },
+  "icons/typescript.svg": {
+    "mtime": 1786119574.504866,
+    "ast_hash": "f57e2f5eead3c75df1d0e527cb22c486",
+    "semantic_hash": ""
+  },
+  "icons/vuejs.svg": {
+    "mtime": 1786119574.504866,
+    "ast_hash": "e3975b02828d1a63486911a3150df475",
+    "semantic_hash": ""
+  },
+  "images/armin.jpg": {
+    "mtime": 1786119574.5058656,
+    "ast_hash": "c386cc3030ba143d912dc8da5623282a",
+    "semantic_hash": ""
+  },
+  "images/armin.png": {
+    "mtime": 1786119574.5103705,
+    "ast_hash": "36c8d99cb03feb0c14c951cce7426bee",
+    "semantic_hash": ""
+  },
+  "images/daroupakhsh.png": {
+    "mtime": 1786119574.511376,
+    "ast_hash": "1ea7274612222a783e187e3659a3b28b",
+    "semantic_hash": ""
+  },
+  "images/farafan_logo.jpg": {
+    "mtime": 1786119574.511376,
+    "ast_hash": "475699f3fbbba2d033e006d41c68ecaa",
+    "semantic_hash": ""
+  },
+  "images/farafan_logo.png": {
+    "mtime": 1786119574.5123806,
+    "ast_hash": "15392a7f9567b0afd4a38a2f9dba5f93",
+    "semantic_hash": ""
+  },
+  "images/hiweb.jpg": {
+    "mtime": 1786119574.51338,
+    "ast_hash": "413447d5f481a616821c643e028b78dd",
+    "semantic_hash": ""
+  },
+  "images/hiweb.png": {
+    "mtime": 1786119574.5143785,
+    "ast_hash": "e6f46e9473c5d386508bf97c72b56a1e",
+    "semantic_hash": ""
+  },
+  "images/islamic_azad_university.png": {
+    "mtime": 1786119574.5143785,
+    "ast_hash": "5a6221530942072f7435812730da0083",
+    "semantic_hash": ""
+  },
+  "images/linkedin_logo.png": {
+    "mtime": 1786119574.5153794,
+    "ast_hash": "c2af3cb5f27c834a536d4291aad848b0",
+    "semantic_hash": ""
+  },
+  "images/linkedin_logo.webp": {
+    "mtime": 1786119574.5163786,
+    "ast_hash": "71284e723f6aa339411f9575d104ba5b",
+    "semantic_hash": ""
+  },
+  "images/nioc.png": {
+    "mtime": 1786119574.5173786,
+    "ast_hash": "7cd499046dd69b9f8843624f5c7e2ac9",
+    "semantic_hash": ""
+  },
+  "images/profile_image.png": {
+    "mtime": 1786119574.5208845,
+    "ast_hash": "36c8d99cb03feb0c14c951cce7426bee",
+    "semantic_hash": ""
+  }
+}
