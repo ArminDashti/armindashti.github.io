@@ -5,10 +5,9 @@ alwaysApply: true
 metadata:
   version: 1.0.0
   author: "Armin Dashti"
-  category: 
   tags: []
   last_updated: "2026-09-10 12:50:20"
-  uuid: ff165b46-a5d1-40c6-a497-ea5613cd8bb2
+  uuid: 9155ba19-14d3-403c-85b5-9a5fcf230af4
 ---
 # Default user/pass for api-webui apps
 
