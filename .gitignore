@@ -2,6 +2,9 @@
 *.exe
 *.EXE
 
+# Local code-graph tooling output (not part of the site)
+graphify-out/
+
 # --- auto: github-commit-push-all-repos ---
 # --- end auto ---
 # --- auto: large files (>5MB) ---
