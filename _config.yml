@@ -1,0 +1,13 @@
+# GitHub Pages / Jekyll — publish only the resume site assets.
+# Dotfiles and underscore-prefixed paths are excluded by Jekyll by default.
+exclude:
+  - AGENTS.md
+  - AGENTS.md.bak
+  - CLAUDE.md
+  - LEAN-CTX.md
+  - README.md
+  - metadata.json
+  - graphify-out
+  - Gemfile
+  - Gemfile.lock
+  - vendor
