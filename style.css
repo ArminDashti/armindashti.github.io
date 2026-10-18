@@ -75,6 +75,53 @@ img {
     }
 }
 
+/* Site nav — minimal icon navbar */
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 2.5rem;
+    padding: 0.4rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0.75rem;
+    z-index: 10;
+}
+
+.site-nav__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-soft);
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.site-nav__link i {
+    color: var(--accent);
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+}
+
+.site-nav__link:hover {
+    color: var(--accent);
+    background: rgba(15, 118, 110, 0.08);
+    text-decoration: none;
+}
+
+.site-nav__link:hover i {
+    color: var(--accent-soft);
+}
+
 /* Hero — first viewport brand */
 
 .hero {

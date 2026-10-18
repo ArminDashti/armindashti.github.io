@@ -100,9 +100,16 @@
     }
     </script>
 </head>
-<body>
+<body id="top">
     <div class="page">
-        <header class="hero">
+        <nav class="site-nav" aria-label="Primary">
+            <a class="site-nav__link" href="#top"><i class="fa-solid fa-house" aria-hidden="true"></i><span>Home</span></a>
+            <a class="site-nav__link" href="#projects-heading"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Projects</span></a>
+            <a class="site-nav__link" href="#cv-heading"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>CV</span></a>
+            <a class="site-nav__link" href="#contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Contact Me</span></a>
+            <a class="site-nav__link" href="#about"><i class="fa-solid fa-user" aria-hidden="true"></i><span>About Me</span></a>
+        </nav>
+        <header class="hero" id="about">
             <img
                 src="images/profile_image.png"
                 alt="Armin Dashti"
@@ -115,7 +122,7 @@
             <div class="hero__text">
                 <h1 class="hero__name">Armin Dashti</h1>
                 <p class="hero__headline">Software Engineer &amp; AI Engineer (Vibe coder)</p>
-                <ul class="contact-row" aria-label="Contact">
+                <ul class="contact-row" id="contact" aria-label="Contact">
                     <li>
                         <span class="contact-row__item">
                             <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
@@ -157,8 +164,8 @@
         </header>
 
         <main>
-            <section class="section" aria-labelledby="experience-heading">
-                <h2 id="experience-heading" class="section__title">Experience (4 years 1 month)</h2>
+            <section class="section" aria-labelledby="cv-heading">
+                <h2 id="cv-heading" class="section__title">Experience (4 years 1 month)</h2>
 
                 <article class="job">
                     <div class="job__header">
