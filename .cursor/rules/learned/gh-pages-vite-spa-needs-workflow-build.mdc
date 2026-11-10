@@ -1,0 +1,23 @@
+---
+description: Fix blank GitHub Pages for Vite/React SPA when Actions builds succeed but the site still serves source index.html. Use when armindashti.github.io (or similar) is blank white/empty #root and HTML references /src/main.tsx.
+---
+
+# GitHub Pages Vite SPA must use workflow deploy
+
+**Goal:** Get a Vite React SPA live on `*.github.io` instead of a blank page.
+
+## Steps
+1. Confirm symptom: live HTML has `<script type="module" src="/src/main.tsx">` and `#root` is empty; `/src/main.tsx` returns 404.
+2. Confirm Actions already builds: `.github/workflows/deploy-pages.yml` uploads `dist` via `actions/upload-pages-artifact` + `actions/deploy-pages`.
+3. Check Pages mode: `gh api repos/<owner>/<repo>/pages --jq "{build_type,source,status}"`.
+4. If `build_type` is `legacy` (branch `/`), switch: `'{"build_type":"workflow"}' | gh api -X PUT repos/<owner>/<repo>/pages --input -`.
+5. Re-run deploy: `gh workflow run deploy-pages.yml --ref main` then `gh run watch`.
+6. Verify live HTML references `/assets/index-*.js` and `/assets/index-*.css`, and those URLs return 200.
+
+## Gotchas
+- A green Actions run does **not** publish the site while Pages still deploys `main` root (source Vite `index.html`).
+- `dist/` is gitignored; do not commit built assets as a workaround.
+- On PowerShell, pipe JSON into `gh api --input -` (no bash `<<<`).
+
+## What didn't work
+- Assuming the existing `deploy-pages.yml` success meant production was fixed — Pages was still `legacy` and kept serving `/src/main.tsx`.
