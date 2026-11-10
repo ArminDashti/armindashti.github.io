@@ -1,0 +1,20 @@
+---
+description: Fix npm ETARGET for rolldown when create-vite scaffolds Vite 8. Use when npm install fails with No matching version found for rolldown on a new Vite React project.
+---
+
+# Pin Vite 6 when create-vite pulls Vite 8
+
+**Goal:** Get a Vite + React + TypeScript app installing cleanly on this machine.
+
+## Steps
+1. If `npm install` fails with `ETARGET` / `No matching version found for rolldown@~1.2.16`, do not keep retrying Vite 8.
+2. Set `vite` to `^6.3.5` and `@vitejs/plugin-react` to `^4.7.0` in `package.json`.
+3. Prefer TypeScript `~5.9.x` with that Vite 6 line (Vite 8 templates may pull TS 7).
+4. Re-run `npm install --prefer-offline --no-audit --no-fund`, then `npm run build`.
+
+## Gotchas
+- `npm create vite@latest` (create-vite 9.x) can scaffold Vite 8, which depends on a rolldown version not published/resolvable in this environment.
+- Tailwind v4 via `@tailwindcss/vite` works on Vite 6.
+
+## What didn't work
+- Installing the stock Vite 8 scaffold as-is — fails at resolve time on `rolldown@~1.2.16` before any app code runs.
