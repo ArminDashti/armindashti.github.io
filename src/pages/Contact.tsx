@@ -41,7 +41,7 @@ export function Contact() {
       <header className="space-y-2">
         <h1
           id="contact-heading"
-          className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-white"
+          className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-[var(--text)]"
         >
           Contact me
         </h1>
@@ -53,11 +53,11 @@ export function Contact() {
           const Icon = item.icon
           const content = (
             <>
-              <span className="flex size-10 items-center justify-center rounded-full bg-[rgba(0,122,204,0.14)] text-[var(--accent)]">
+              <span className="flex size-10 items-center justify-center rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] text-[var(--accent)]">
                 <Icon className="size-4" aria-hidden="true" />
               </span>
               <span>
-                <span className="block text-xs tracking-wide text-[var(--text-muted)] uppercase">
+                <span className="block font-[family-name:var(--font-display)] text-[0.65rem] tracking-[0.14em] text-[var(--text-muted)] uppercase">
                   {item.label}
                 </span>
                 <span className="text-[var(--text)]">{item.value}</span>
@@ -72,12 +72,12 @@ export function Contact() {
                   href={item.href}
                   target={item.href.startsWith('http') ? '_blank' : undefined}
                   rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="flex items-center gap-4 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3 no-underline transition-colors hover:border-[var(--accent)]"
+                  className="flex min-h-11 items-center gap-4 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3 no-underline transition-colors duration-200 hover:border-[var(--accent)]"
                 >
                   {content}
                 </a>
               ) : (
-                <div className="flex items-center gap-4 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3">
+                <div className="flex min-h-11 items-center gap-4 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3">
                   {content}
                 </div>
               )}
@@ -90,13 +90,13 @@ export function Contact() {
             href={profile.links.cursor}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3 no-underline transition-colors hover:border-[var(--accent)]"
+            className="flex min-h-11 items-center gap-4 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] px-4 py-3 no-underline transition-colors duration-200 hover:border-[var(--accent)]"
           >
-            <span className="flex size-10 items-center justify-center rounded-full bg-[rgba(0,122,204,0.14)]">
+            <span className="flex size-10 items-center justify-center rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-hover)]">
               <img src="/icons/cursor.svg" alt="" width={16} height={16} />
             </span>
             <span>
-              <span className="block text-xs tracking-wide text-[var(--text-muted)] uppercase">
+              <span className="block font-[family-name:var(--font-display)] text-[0.65rem] tracking-[0.14em] text-[var(--text-muted)] uppercase">
                 Cursor
               </span>
               <span className="text-[var(--text)]">cursor.com/@armindashti</span>

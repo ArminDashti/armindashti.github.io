@@ -12,17 +12,17 @@ export function Home() {
           alt={profile.name}
           width={128}
           height={128}
-          className="size-32 shrink-0 rounded-full object-cover shadow-[var(--shadow-sm)] ring-[3px] ring-[rgba(0,122,204,0.28)]"
+          className="size-32 shrink-0 rounded-full object-cover shadow-[var(--shadow-sm)] ring-[3px] ring-[var(--accent-muted)]"
           onError={(event) => {
             event.currentTarget.onerror = null
             event.currentTarget.src = profile.photoFallback
           }}
         />
         <div>
-          <p className="mb-2 font-[family-name:var(--font-display)] text-sm font-semibold tracking-[0.18em] text-[var(--accent)] uppercase">
+          <p className="mb-2 font-[family-name:var(--font-display)] text-xs font-semibold tracking-[0.18em] text-[var(--accent)] uppercase">
             Portfolio
           </p>
-          <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-white sm:text-5xl">
+          <h1 className="font-[family-name:var(--font-display)] text-4xl font-bold tracking-tight text-[var(--text)] sm:text-5xl">
             {profile.name}
           </h1>
           <p className="mt-3 max-w-xl text-lg text-[var(--text-soft)]">{profile.headline}</p>

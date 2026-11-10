@@ -22,7 +22,7 @@ const links: NavItem[] = [
 export function SiteNav() {
   return (
     <nav
-      className="sticky top-3 z-10 mb-10 flex flex-wrap justify-center gap-1 rounded-full border border-[var(--border)] bg-[var(--bg-elevated)] p-1.5 shadow-[var(--shadow-sm)]"
+      className="sticky top-3 z-10 mb-10 flex flex-wrap justify-center gap-1 rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] p-1 shadow-[var(--shadow-sm)] backdrop-blur-sm"
       aria-label="Primary"
     >
       {links.map(({ to, label, icon: Icon, end }) => (
@@ -32,10 +32,10 @@ export function SiteNav() {
           end={end}
           className={({ isActive }) =>
             cn(
-              'site-nav__link relative inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-sm font-semibold no-underline transition-colors',
+              'site-nav__link relative inline-flex min-h-11 items-center gap-2 rounded-[calc(var(--radius)-2px)] px-3.5 py-2.5 font-[family-name:var(--font-display)] text-sm font-medium no-underline transition-colors duration-200',
               isActive
-                ? 'bg-[rgba(0,122,204,0.16)] text-[var(--accent-soft)]'
-                : 'text-[var(--text-soft)] hover:bg-[var(--bg-hover)] hover:text-[var(--accent)]',
+                ? 'bg-[var(--accent-muted)] text-[var(--accent-soft)]'
+                : 'text-[var(--text-soft)] hover:bg-[var(--bg-hover)] hover:text-[var(--text)]',
             )
           }
         >
@@ -45,7 +45,7 @@ export function SiteNav() {
               <span>{label}</span>
               {isActive ? (
                 <span
-                  className="absolute inset-x-3 -bottom-0.5 h-0.5 origin-left rounded-full bg-[var(--accent)]"
+                  className="absolute inset-x-3 bottom-1 h-0.5 origin-left rounded-full bg-[var(--accent)]"
                   style={{ animation: 'nav-underline 0.25s ease both' }}
                   aria-hidden="true"
                 />

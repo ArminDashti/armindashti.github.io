@@ -9,7 +9,7 @@ export function Projects() {
       <header className="space-y-2">
         <h1
           id="projects-heading"
-          className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-white"
+          className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-[var(--text)]"
         >
           GitHub Projects
         </h1>
@@ -19,8 +19,8 @@ export function Projects() {
       <ul className="space-y-6">
         {projects.map((project) => (
           <li key={project.name}>
-            <article className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] p-5 transition-colors hover:border-[var(--accent)]">
-              <h2 className="font-[family-name:var(--font-display)] text-xl font-semibold text-white">
+            <article className="rounded-[var(--radius)] border border-[var(--border)] bg-[var(--bg-elevated)] p-5 transition-colors duration-200 hover:border-[var(--accent)]">
+              <h2 className="font-[family-name:var(--font-display)] text-xl font-semibold text-[var(--text)]">
                 {project.name}
               </h2>
               <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">

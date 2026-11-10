@@ -13,7 +13,7 @@ export function WhoAmI() {
           alt={profile.name}
           width={112}
           height={112}
-          className="size-28 shrink-0 rounded-full object-cover ring-[3px] ring-[rgba(0,122,204,0.28)]"
+          className="size-28 shrink-0 rounded-full object-cover ring-[3px] ring-[var(--accent-muted)]"
           onError={(event) => {
             event.currentTarget.onerror = null
             event.currentTarget.src = profile.photoFallback
@@ -22,7 +22,7 @@ export function WhoAmI() {
         <div>
           <h1
             id="who-heading"
-            className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-white"
+            className="font-[family-name:var(--font-display)] text-3xl font-bold tracking-tight text-[var(--text)]"
           >
             Who am I
           </h1>
@@ -37,7 +37,7 @@ export function WhoAmI() {
       </div>
 
       <div>
-        <h2 className="mb-3 text-sm font-semibold tracking-wide text-[var(--accent)] uppercase">
+        <h2 className="mb-3 font-[family-name:var(--font-display)] text-xs font-semibold tracking-[0.14em] text-[var(--accent)] uppercase">
           Knows about
         </h2>
         <SkillChips
