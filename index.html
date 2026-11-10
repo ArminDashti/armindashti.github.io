@@ -1,523 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Armin Dashti — Software Engineer &amp; AI Engineer</title>
-    <meta name="description" content="Armin Dashti — Software Engineer &amp; AI Engineer (Vibe coder) in Tehran. Experience with .NET, Vue.js, computer vision, and AI-assisted development.">
-    <meta name="author" content="Armin Dashti">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <meta name="keywords" content="Armin Dashti, Software Engineer, AI Engineer, .NET, C#, Vue.js, Computer Vision, PyTorch, Tehran, Vibe coder">
-    <link rel="canonical" href="https://armindashti.github.io/">
-    <meta name="theme-color" content="#0f766e">
+    <meta
+      name="description"
+      content="Armin Dashti — Software Engineer &amp; AI Engineer (Vibe coder) in Tehran. Experience with .NET, Vue.js, computer vision, and AI-assisted development."
+    />
+    <meta name="author" content="Armin Dashti" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta
+      name="keywords"
+      content="Armin Dashti, Software Engineer, AI Engineer, .NET, C#, Vue.js, Computer Vision, PyTorch, Tehran, Vibe coder"
+    />
+    <link rel="canonical" href="https://armindashti.github.io/" />
+    <meta name="theme-color" content="#007acc" />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="profile">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Armin Dashti">
-    <meta property="og:url" content="https://armindashti.github.io/">
-    <meta property="og:title" content="Armin Dashti — Software Engineer &amp; AI Engineer">
-    <meta property="og:description" content="Software Engineer &amp; AI Engineer (Vibe coder) in Tehran. .NET, Vue.js, computer vision, and AI-assisted development.">
-    <meta property="og:image" content="https://armindashti.github.io/images/profile_image.png">
-    <meta property="og:image:alt" content="Portrait of Armin Dashti">
-    <meta property="profile:first_name" content="Armin">
-    <meta property="profile:last_name" content="Dashti">
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Armin Dashti" />
+    <meta property="og:url" content="https://armindashti.github.io/" />
+    <meta property="og:title" content="Armin Dashti — Software Engineer &amp; AI Engineer" />
+    <meta
+      property="og:description"
+      content="Software Engineer &amp; AI Engineer (Vibe coder) in Tehran. .NET, Vue.js, computer vision, and AI-assisted development."
+    />
+    <meta property="og:image" content="https://armindashti.github.io/images/profile_image.png" />
+    <meta property="og:image:alt" content="Portrait of Armin Dashti" />
+    <meta property="profile:first_name" content="Armin" />
+    <meta property="profile:last_name" content="Dashti" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Armin Dashti — Software Engineer &amp; AI Engineer">
-    <meta name="twitter:description" content="Software Engineer &amp; AI Engineer (Vibe coder) in Tehran. .NET, Vue.js, computer vision, and AI-assisted development.">
-    <meta name="twitter:image" content="https://armindashti.github.io/images/profile_image.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Armin Dashti — Software Engineer &amp; AI Engineer" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer &amp; AI Engineer (Vibe coder) in Tehran. .NET, Vue.js, computer vision, and AI-assisted development."
+    />
+    <meta name="twitter:image" content="https://armindashti.github.io/images/profile_image.png" />
 
-    <link rel="icon" href="images/profile_image.png" type="image/png">
-    <link rel="apple-touch-icon" href="images/profile_image.png">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://armindashti.github.io/sitemap.xml">
+    <link rel="icon" href="/images/profile_image.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/images/profile_image.png" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://armindashti.github.io/sitemap.xml" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://armindashti.github.io/#website",
-          "url": "https://armindashti.github.io/",
-          "name": "Armin Dashti",
-          "description": "Personal site of Armin Dashti — Software Engineer & AI Engineer (Vibe coder).",
-          "inLanguage": "en",
-          "publisher": { "@id": "https://armindashti.github.io/#person" }
-        },
-        {
-          "@type": "ProfilePage",
-          "@id": "https://armindashti.github.io/#webpage",
-          "url": "https://armindashti.github.io/",
-          "name": "Armin Dashti — Software Engineer & AI Engineer",
-          "isPartOf": { "@id": "https://armindashti.github.io/#website" },
-          "about": { "@id": "https://armindashti.github.io/#person" },
-          "mainEntity": { "@id": "https://armindashti.github.io/#person" },
-          "inLanguage": "en"
-        },
-        {
-          "@type": "Person",
-          "@id": "https://armindashti.github.io/#person",
-          "name": "Armin Dashti",
-          "url": "https://armindashti.github.io/",
-          "image": "https://armindashti.github.io/images/profile_image.png",
-          "jobTitle": "Software Engineer & AI Engineer",
-          "description": "Software Engineer & AI Engineer (Vibe coder) with experience in .NET, Vue.js, computer vision, and AI-assisted development.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Tehran",
-            "addressCountry": "IR"
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://armindashti.github.io/#website",
+            "url": "https://armindashti.github.io/",
+            "name": "Armin Dashti",
+            "description": "Personal site of Armin Dashti — Software Engineer & AI Engineer (Vibe coder).",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://armindashti.github.io/#person" }
           },
-          "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Islamic Azad University"
+          {
+            "@type": "ProfilePage",
+            "@id": "https://armindashti.github.io/#webpage",
+            "url": "https://armindashti.github.io/",
+            "name": "Armin Dashti — Software Engineer & AI Engineer",
+            "isPartOf": { "@id": "https://armindashti.github.io/#website" },
+            "about": { "@id": "https://armindashti.github.io/#person" },
+            "mainEntity": { "@id": "https://armindashti.github.io/#person" },
+            "inLanguage": "en"
           },
-          "knowsAbout": [
-            ".NET",
-            "C#",
-            "Vue.js",
-            "SQL Server",
-            "Computer Vision",
-            "PyTorch",
-            "Python",
-            "AI-assisted development"
-          ],
-          "sameAs": [
-            "https://www.linkedin.com/in/armin-dashti-058239a1/",
-            "https://github.com/armindashti",
-            "https://cursor.com/@armindashti"
-          ]
-        }
-      ]
-    }
+          {
+            "@type": "Person",
+            "@id": "https://armindashti.github.io/#person",
+            "name": "Armin Dashti",
+            "url": "https://armindashti.github.io/",
+            "image": "https://armindashti.github.io/images/profile_image.png",
+            "jobTitle": "Software Engineer & AI Engineer",
+            "description": "Software Engineer & AI Engineer (Vibe coder) with experience in .NET, Vue.js, computer vision, and AI-assisted development.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Tehran",
+              "addressCountry": "IR"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Islamic Azad University"
+            },
+            "knowsAbout": [
+              ".NET",
+              "C#",
+              "Vue.js",
+              "SQL Server",
+              "Computer Vision",
+              "PyTorch",
+              "Python",
+              "AI-assisted development"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/armin-dashti-058239a1/",
+              "https://github.com/armindashti",
+              "https://cursor.com/@armindashti"
+            ]
+          }
+        ]
+      }
     </script>
-</head>
-<body id="top">
-    <div class="page">
-        <nav class="site-nav" aria-label="Primary">
-            <a class="site-nav__link" href="#top"><i class="fa-solid fa-house" aria-hidden="true"></i><span>Home</span></a>
-            <a class="site-nav__link" href="#projects-heading"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Projects</span></a>
-            <a class="site-nav__link" href="#cv-heading"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>CV</span></a>
-            <a class="site-nav__link" href="#contact"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>Contact Me</span></a>
-            <a class="site-nav__link" href="#about"><i class="fa-solid fa-user" aria-hidden="true"></i><span>About Me</span></a>
-        </nav>
-        <header class="hero" id="about">
-            <img
-                src="images/profile_image.png"
-                alt="Armin Dashti"
-                class="hero__photo"
-                width="112"
-                height="112"
-                loading="eager"
-                onerror="this.onerror=null; this.src='images/armin.png';"
-            >
-            <div class="hero__text">
-                <h1 class="hero__name">Armin Dashti</h1>
-                <p class="hero__headline">Software Engineer &amp; AI Engineer (Vibe coder)</p>
-                <ul class="contact-row" id="contact" aria-label="Contact">
-                    <li>
-                        <span class="contact-row__item">
-                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                            Tehran, Iran
-                        </span>
-                    </li>
-                    <li>
-                        <a class="contact-row__item" id="contact-email" href="mailto:arminonline71@gmail.com" aria-label="Email">
-                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                            <span class="contact-row__value">arminonline71@gmail.com</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="contact-row__item" id="contact-phone" href="tel:+989357888384" aria-label="Phone">
-                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
-                            <span class="contact-row__value">+98 935 788 8384</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="contact-row__item" href="https://www.linkedin.com/in/armin-dashti-058239a1/" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                            LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a class="contact-row__item" href="https://github.com/armindashti" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-github" aria-hidden="true"></i>
-                            GitHub
-                        </a>
-                    </li>
-                    <li>
-                        <a class="contact-row__item" href="https://cursor.com/@armindashti" target="_blank" rel="noopener">
-                            <img src="icons/cursor.svg" alt="" width="14" height="14">
-                            Cursor
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-
-        <main>
-            <section class="section" aria-labelledby="cv-heading">
-                <h2 id="cv-heading" class="section__title">Experience (4 years 1 month)</h2>
-
-                <article class="job">
-                    <div class="job__header">
-                        <img src="images/daroupakhsh.png" alt="Daroupakhsh Distribution" class="job__logo" width="48" height="48" loading="lazy">
-                        <div class="job__meta">
-                            <h3 class="job__role">Software Engineer</h3>
-                            <p class="job__company">Daroupakhsh Distribution</p>
-                            <p class="job__place">Full-time · Tehran, Iran · On-site</p>
-                        </div>
-                        <p class="job__dates">
-                            Aug 2025 – Present
-                            <span class="job__tenure">(1 year)</span>
-                        </p>
-                    </div>
-                    <ul class="job__bullets">
-                        <li>
-                            <span class="job__bullet-title">Academy Platform</span>
-                            <span class="job__bullet-desc"> — Internal platform for the organization's training department to conduct surveys and internal examinations, enabling data collection and automated assessment workflows</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">ERP System Modules</span>
-                            <span class="job__bullet-desc"> — Developed enterprise ERP system modules that support integrated business operations and data management</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">Seminar Management Platform</span>
-                            <span class="job__bullet-desc"> — Built a comprehensive seminar management platform that facilitates event registration, scheduling, and participant tracking</span>
-                        </li>
-                    </ul>
-                    <div class="skill-chips" aria-label="Technologies used">
-                        <span class="skill-chip"><img src="icons/dotnet.svg" alt="">.NET</span>
-                        <span class="skill-chip"><img src="icons/csharp.svg" alt="">C#</span>
-                        <span class="skill-chip"><img src="icons/vuejs.svg" alt="">Vue.js</span>
-                        <span class="skill-chip"><img src="icons/microsoftsqlserver.svg" alt="">SQL Server</span>
-                        <span class="skill-chip"><img src="icons/redis.svg" alt="">Redis</span>
-                        <span class="skill-chip"><img src="icons/cursor.svg" alt="">Cursor</span>
-                        <span class="skill-chip"><img src="icons/claude.svg" alt="">Claude Code</span>
-                        <span class="skill-chip"><img src="icons/copilot.svg" alt="">Copilot</span>
-                    </div>
-                </article>
-
-                <article class="job">
-                    <div class="job__header">
-                        <img src="images/hiweb.png" alt="HiWEB" class="job__logo" width="48" height="48" loading="lazy">
-                        <div class="job__meta">
-                            <h3 class="job__role">Artificial Intelligence Engineer</h3>
-                            <p class="job__company">
-                                <a href="https://hiweb.ir" target="_blank" rel="noopener">HiWEB</a>
-                            </p>
-                            <p class="job__place">Full-time · Tehran, Iran · Hybrid</p>
-                        </div>
-                        <p class="job__dates">
-                            Jul 2023 – Sep 2024
-                            <span class="job__tenure job__tenure--muted">(1 year 3 months)</span>
-                        </p>
-                    </div>
-                    <ul class="job__bullets">
-                        <li>
-                            <span class="job__bullet-title">Road Violation System</span>
-                            <span class="job__bullet-desc"> — Road violation registration for traffic monitoring and speeding detection</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">Vehicle Classification</span>
-                            <span class="job__bullet-desc"> — Classification system with 95% accuracy (Iranian, Chinese, EU vehicles)</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">Color Classification</span>
-                            <span class="job__bullet-desc"> — Color-based vehicle classification with 90% accuracy</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">SQL Optimization</span>
-                            <span class="job__bullet-desc"> — Database optimization for real-time data processing</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">Intern Mentoring</span>
-                            <span class="job__bullet-desc"> — Trained 4 interns in Python, AI techniques, and software development</span>
-                        </li>
-                    </ul>
-                    <div class="skill-chips" aria-label="Technologies used">
-                        <span class="skill-chip"><i class="fa-solid fa-eye" aria-hidden="true"></i>Computer Vision</span>
-                        <span class="skill-chip"><img src="icons/python.svg" alt="">Python</span>
-                        <span class="skill-chip"><img src="icons/pytorch.svg" alt="">PyTorch</span>
-                        <span class="skill-chip"><img src="icons/opencv.svg" alt="">OpenCV</span>
-                        <span class="skill-chip"><i class="fa-solid fa-car" aria-hidden="true"></i>YOLO</span>
-                        <span class="skill-chip"><img src="icons/numpy.svg" alt="">NumPy</span>
-                        <span class="skill-chip"><img src="icons/pandas.svg" alt="">Pandas</span>
-                        <span class="skill-chip"><img src="icons/scikitlearn.svg" alt="">Scikit-Learn</span>
-                        <span class="skill-chip"><img src="icons/microsoftsqlserver.svg" alt="">SQL Server</span>
-                    </div>
-                </article>
-
-                <article class="job">
-                    <div class="job__header">
-                        <img src="images/farafan_logo.png" alt="Farafan" class="job__logo" width="48" height="48" loading="lazy">
-                        <div class="job__meta">
-                            <h3 class="job__role">Artificial Intelligence Engineer</h3>
-                            <p class="job__company">
-                                <a href="https://www.farafan.ir/" target="_blank" rel="noopener">Farafan</a>
-                            </p>
-                            <p class="job__place">Full-time · Tehran, Iran · Hybrid</p>
-                        </div>
-                        <p class="job__dates">
-                            Jul 2022 – Mar 2023
-                            <span class="job__tenure job__tenure--muted">(9 months)</span>
-                        </p>
-                    </div>
-                    <ul class="job__bullets">
-                        <li>
-                            <span class="job__bullet-title">Predictive Models</span>
-                            <span class="job__bullet-desc"> — Forecasting voice call and internet traffic</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">Face Recognition System</span>
-                            <span class="job__bullet-desc"> — Security and attendance automation</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">Data Processing Pipelines</span>
-                            <span class="job__bullet-desc"> — Pipelines with SQL databases</span>
-                        </li>
-                    </ul>
-                    <div class="skill-chips" aria-label="Technologies used">
-                        <span class="skill-chip"><img src="icons/python.svg" alt="">Python</span>
-                        <span class="skill-chip"><img src="icons/scikitlearn.svg" alt="">Scikit-Learn</span>
-                        <span class="skill-chip"><img src="icons/tensorflow.svg" alt="">TensorFlow</span>
-                        <span class="skill-chip"><i class="fa-solid fa-eye" aria-hidden="true"></i>Computer Vision</span>
-                        <span class="skill-chip"><img src="icons/pytorch.svg" alt="">PyTorch</span>
-                        <span class="skill-chip"><img src="icons/opencv.svg" alt="">OpenCV</span>
-                        <span class="skill-chip"><img src="icons/numpy.svg" alt="">NumPy</span>
-                        <span class="skill-chip"><img src="icons/pandas.svg" alt="">Pandas</span>
-                        <span class="skill-chip"><img src="icons/microsoftsqlserver.svg" alt="">SQL Server</span>
-                    </div>
-                </article>
-
-                <article class="job">
-                    <div class="job__header">
-                        <img src="images/nioc.png" alt="Petroleum Industry Health Organization" class="job__logo" width="48" height="48" loading="lazy">
-                        <div class="job__meta">
-                            <h3 class="job__role">Software Engineer</h3>
-                            <p class="job__company">
-                                <a href="https://www.piho.ir/" target="_blank" rel="noopener">Petroleum Industry Health Organization (The National Iranian Oil Company)</a>
-                            </p>
-                            <p class="job__place">Full-time · Bandar-e Mahshahr, Iran · On-site</p>
-                        </div>
-                        <p class="job__dates">
-                            Mar 2017 – Mar 2018
-                            <span class="job__tenure job__tenure--muted">(1 year 1 month)</span>
-                        </p>
-                    </div>
-                    <ul class="job__bullets">
-                        <li>
-                            <span class="job__bullet-title">Internal Business Applications</span>
-                            <span class="job__bullet-desc"> — Developed applications using VB.NET, SQL Server, and Windows Forms</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">Project Management Platform</span>
-                            <span class="job__bullet-desc"> — Built a platform for operational tracking</span>
-                        </li>
-                        <li>
-                            <span class="job__bullet-title">Warehouse Request System</span>
-                            <span class="job__bullet-desc"> — Created a warehouse request management system</span>
-                        </li>
-                    </ul>
-                    <div class="skill-chips" aria-label="Technologies used">
-                        <span class="skill-chip"><img src="icons/dotnet.svg" alt="">VB.NET</span>
-                        <span class="skill-chip"><img src="icons/microsoftsqlserver.svg" alt="">SQL Server</span>
-                        <span class="skill-chip"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i>Windows Forms</span>
-                    </div>
-                </article>
-            </section>
-
-            <section class="section" aria-labelledby="tech-heading">
-                <h2 id="tech-heading" class="section__title">Technologies</h2>
-                <div class="tech-groups">
-                    <div class="tech-group">
-                        <h3 class="tech-group__label">Vibe Coding &amp; AI Tools</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip"><img src="icons/cursor.svg" alt="">Cursor</span>
-                            <span class="skill-chip"><img src="icons/claude.svg" alt="">Claude Code</span>
-                            <span class="skill-chip"><img src="icons/copilot.svg" alt="">Copilot</span>
-                            <span class="skill-chip"><img src="icons/openai.svg" alt="">Codex</span>
-                            <span class="skill-chip"><img src="icons/devin.svg" alt="">Devin</span>
-                            <span class="skill-chip"><img src="icons/antigravity.png" alt="">Antigravity</span>
-                            <span class="skill-chip"><i class="fa-solid fa-plug" aria-hidden="true"></i>MCP</span>
-                            <span class="skill-chip"><img src="icons/langchain.svg" alt="">LangChain</span>
-                            <span class="skill-chip"><i class="fa-solid fa-robot" aria-hidden="true"></i>Agentic AI</span>
-                            <span class="skill-chip"><i class="fa-solid fa-brain" aria-hidden="true"></i>LLMs</span>
-                        </div>
-                    </div>
-                    <div class="tech-group">
-                        <h3 class="tech-group__label">Web Development</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip"><img src="icons/csharp.svg" alt="">C#</span>
-                            <span class="skill-chip"><img src="icons/dotnet.svg" alt="">.NET</span>
-                            <span class="skill-chip"><img src="icons/vuejs.svg" alt="">Vue.js</span>
-                            <span class="skill-chip"><img src="icons/tailwindcss.svg" alt="">Tailwind</span>
-                        </div>
-                    </div>
-                    <div class="tech-group">
-                        <h3 class="tech-group__label">Database &amp; DevOps</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip"><img src="icons/microsoftsqlserver.svg" alt="">SQL Server</span>
-                            <span class="skill-chip"><img src="icons/redis.svg" alt="">Redis</span>
-                            <span class="skill-chip"><img src="icons/docker.svg" alt="">Docker</span>
-                            <span class="skill-chip"><img src="icons/git.svg" alt="">Git</span>
-                            <span class="skill-chip"><img src="icons/iis.svg" alt="">IIS</span>
-                        </div>
-                    </div>
-                    <div class="tech-group">
-                        <h3 class="tech-group__label">AI &amp; Data Science</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip"><img src="icons/python.svg" alt="">Python</span>
-                            <span class="skill-chip"><img src="icons/pytorch.svg" alt="">PyTorch</span>
-                            <span class="skill-chip"><i class="fa-solid fa-eye" aria-hidden="true"></i>Computer Vision</span>
-                            <span class="skill-chip"><img src="icons/scikitlearn.svg" alt="">Scikit-Learn</span>
-                        </div>
-                    </div>
-                    <div class="tech-group">
-                        <h3 class="tech-group__label">Architecture</h3>
-                        <div class="skill-chips">
-                            <span class="skill-chip"><i class="fa-solid fa-sitemap" aria-hidden="true"></i>Clean Architecture</span>
-                            <span class="skill-chip"><i class="fa-solid fa-arrows-split-up-and-left" aria-hidden="true"></i>CQRS</span>
-                            <span class="skill-chip"><i class="fa-solid fa-cubes" aria-hidden="true"></i>SOLID</span>
-                            <span class="skill-chip"><i class="fa-solid fa-network-wired" aria-hidden="true"></i>Microservices</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section" aria-labelledby="education-heading">
-                <h2 id="education-heading" class="section__title">Education</h2>
-                <div class="education">
-                    <img src="images/islamic_azad_university.png" alt="Islamic Azad University" class="education__logo" width="48" height="48" loading="lazy">
-                    <div class="education__body">
-                        <div>
-                            <h3 class="education__degree">Bachelor's in Information Technology</h3>
-                            <p class="education__school">Islamic Azad University</p>
-                        </div>
-                        <p class="education__dates">2013 – 2018</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section section--last" aria-labelledby="projects-heading">
-                <h2 id="projects-heading" class="section__title">GitHub Projects</h2>
-                <ul class="projects">
-                    <li>
-                        <div class="project project--static">
-                            <span class="project__top">
-                                <span class="project__name">asip</span>
-                            </span>
-                            <span class="project__links">
-                                <a href="https://github.com/ArminDashti/asip-webui" target="_blank" rel="noopener">github.com/ArminDashti/asip-webui</a>
-                                <span aria-hidden="true">·</span>
-                                <a href="https://github.com/ArminDashti/asip-api" target="_blank" rel="noopener">github.com/ArminDashti/asip-api</a>
-                            </span>
-                            <span class="project__desc">SPA for caller IP, ASN, AS, and country lookup, plus IP and DNS lookup pages backed by the as-ip API.</span>
-                            <div class="skill-chips" aria-label="Technologies used">
-                                <span class="skill-chip"><img src="icons/vuejs.svg" alt="">Vue.js</span>
-                                <span class="skill-chip"><img src="icons/typescript.svg" alt="">TypeScript</span>
-                                <span class="skill-chip"><img src="icons/docker.svg" alt="">Docker</span>
-                                <span class="skill-chip"><img src="icons/go.svg" alt="">Go</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project project--static">
-                            <span class="project__top">
-                                <span class="project__name">exar</span>
-                            </span>
-                            <span class="project__links">
-                                <a href="https://github.com/ArminDashti/exar-api" target="_blank" rel="noopener">github.com/ArminDashti/exar-api</a>
-                                <span aria-hidden="true">·</span>
-                                <a href="https://github.com/ArminDashti/exar-web" target="_blank" rel="noopener">github.com/ArminDashti/exar-web</a>
-                            </span>
-                            <span class="project__desc">REST API for shared daily expense tracking with JWT auth, shop/item management, and Jalali date support.</span>
-                            <div class="skill-chips" aria-label="Technologies used">
-                                <span class="skill-chip"><img src="icons/go.svg" alt="">Go</span>
-                                <span class="skill-chip"><i class="fa-solid fa-database" aria-hidden="true"></i>PostgreSQL</span>
-                                <span class="skill-chip"><img src="icons/docker.svg" alt="">Docker</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="project" href="https://github.com/ArminDashti/janus-hub" target="_blank" rel="noopener">
-                            <span class="project__top">
-                                <span class="project__name">janus</span>
-                            </span>
-                            <span class="project__links">github.com/ArminDashti/janus-hub</span>
-                            <span class="project__desc">Hub for Janus workflows — coordinating automation scripts, agents, and operational tooling.</span>
-                            <span class="skill-chips" aria-label="Technologies used">
-                                <span class="skill-chip"><img src="icons/powershell.svg" alt="">PowerShell</span>
-                                <span class="skill-chip"><img src="icons/git.svg" alt="">Git</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="project project--static">
-                            <span class="project__top">
-                                <span class="project__name">lexmora</span>
-                            </span>
-                            <span class="project__links">
-                                <a href="https://github.com/ArminDashti/lexmora-webui" target="_blank" rel="noopener">github.com/ArminDashti/lexmora-webui</a>
-                                <span aria-hidden="true">·</span>
-                                <a href="https://github.com/ArminDashti/lexmora-api" target="_blank" rel="noopener">github.com/ArminDashti/lexmora-api</a>
-                            </span>
-                            <span class="project__desc">Dark-themed Vue SPA for AI transforms, history, instructions, stats, and OpenRouter settings.</span>
-                            <div class="skill-chips" aria-label="Technologies used">
-                                <span class="skill-chip"><img src="icons/vuejs.svg" alt="">Vue.js</span>
-                                <span class="skill-chip"><img src="icons/typescript.svg" alt="">TypeScript</span>
-                                <span class="skill-chip"><img src="icons/tailwindcss.svg" alt="">Tailwind</span>
-                                <span class="skill-chip"><img src="icons/docker.svg" alt="">Docker</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="project" href="https://github.com/ArminDashti/netvan" target="_blank" rel="noopener">
-                            <span class="project__top">
-                                <span class="project__name">netvan</span>
-                            </span>
-                            <span class="project__links">github.com/ArminDashti/netvan</span>
-                            <span class="project__desc">Windows network monitor with tray widget, NIC bandwidth, system metrics, latency tools, and usage history.</span>
-                            <span class="skill-chips" aria-label="Technologies used">
-                                <span class="skill-chip"><img src="icons/rust.svg" alt="">Rust</span>
-                                <span class="skill-chip"><img src="icons/typescript.svg" alt="">TypeScript</span>
-                                <span class="skill-chip"><i class="fa-brands fa-react" aria-hidden="true"></i>React</span>
-                                <span class="skill-chip"><i class="fa-solid fa-database" aria-hidden="true"></i>SQLite</span>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="project" href="https://github.com/ArminDashti/parkiroid" target="_blank" rel="noopener">
-                            <span class="project__top">
-                                <span class="project__name">parkiroid</span>
-                            </span>
-                            <span class="project__links">github.com/ArminDashti/parkiroid</span>
-                            <span class="project__desc">Android vehicle monitoring and driving assistance with on-device AI, WebRTC streaming, and telemetry upload.</span>
-                            <span class="skill-chips" aria-label="Technologies used">
-                                <span class="skill-chip"><img src="icons/kotlin.svg" alt="">Kotlin</span>
-                                <span class="skill-chip"><i class="fa-brands fa-android" aria-hidden="true"></i>Android</span>
-                                <span class="skill-chip"><i class="fa-solid fa-eye" aria-hidden="true"></i>NCNN / CV</span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-                <p class="projects-more">
-                    More on
-                    <a href="https://github.com/ArminDashti" target="_blank" rel="noopener">github.com/ArminDashti</a>
-                </p>
-            </section>
-        </main>
-    </div>
-    <!-- Cloudflare Web Analytics -->
-    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "30e3a0c2321348879e2c62377447552f"}'></script>
-    <!-- End Cloudflare Web Analytics -->
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "30e3a0c2321348879e2c62377447552f"}'
+    ></script>
+  </body>
 </html>

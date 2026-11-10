@@ -1,0 +1,41 @@
+export const profile = {
+  name: 'Armin Dashti',
+  headline: 'Software Engineer & AI Engineer (Vibe coder)',
+  jobTitle: 'Software Engineer & AI Engineer',
+  location: 'Tehran, Iran',
+  email: 'arminonline71@gmail.com',
+  phoneDisplay: '+98 935 788 8384',
+  phoneTel: '+989357888384',
+  photo: '/images/profile_image.png',
+  photoFallback: '/images/armin.png',
+  description:
+    'Software Engineer & AI Engineer (Vibe coder) with experience in .NET, Vue.js, computer vision, and AI-assisted development.',
+  whoAmI: [
+    'I am Armin Dashti — a Software Engineer and AI Engineer (Vibe coder) based in Tehran.',
+    'I build with .NET, Vue.js, computer vision, and AI-assisted development workflows.',
+    'I studied Information Technology at Islamic Azad University and work across product engineering, data pipelines, and agentic tooling.',
+  ],
+  links: {
+    linkedin: 'https://www.linkedin.com/in/armin-dashti-058239a1/',
+    github: 'https://github.com/armindashti',
+    cursor: 'https://cursor.com/@armindashti',
+    githubOrg: 'https://github.com/ArminDashti',
+  },
+  knowsAbout: [
+    '.NET',
+    'C#',
+    'Vue.js',
+    'SQL Server',
+    'Computer Vision',
+    'PyTorch',
+    'Python',
+    'AI-assisted development',
+  ],
+  education: {
+    degree: "Bachelor's in Information Technology",
+    school: 'Islamic Azad University',
+    dates: '2013 – 2018',
+    logo: '/images/islamic_azad_university.png',
+  },
+  experienceSummary: '4 years 1 month',
+} as const

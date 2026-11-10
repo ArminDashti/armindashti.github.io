@@ -1,5 +1,5 @@
-# GitHub Pages / Jekyll — publish only the resume site assets.
-# Dotfiles and underscore-prefixed paths are excluded by Jekyll by default.
+# Legacy Jekyll config — site is now built by Vite and published via GitHub Actions.
+# Keep this file only so accidental Jekyll builds exclude tool folders.
 exclude:
   - AGENTS.md
   - AGENTS.md.bak
@@ -8,6 +8,12 @@ exclude:
   - README.md
   - metadata.json
   - graphify-out
+  - .agents
+  - .codegraph
+  - .gitnexus
+  - node_modules
+  - src
+  - _legacy
   - Gemfile
   - Gemfile.lock
   - vendor

@@ -68,3 +68,12 @@ graphify-out/
 .cursor/hooks.json
 .cursor/agents/
 .cursor/tools/
+
+dist/
+
+
+node_modules/
+
+
+_legacy/
+
